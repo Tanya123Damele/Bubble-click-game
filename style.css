@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(163, 203, 163);
+}
+.panel{
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.ptop{
+    display: flex;
+    color: white;
+    padding: 0 30%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(66, 99, 66);
+}
+.elem{
+    display: flex;
+    /* background-color: red; */
+    /* width: 30%; */
+    gap: 20px;
+    align-items: center;
+}
+
+.elem h4{
+    font-weight: 600;
+    font-size: 22px;
+}
+.box{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(76, 131, 76);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.pbottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(66, 99, 66);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 500;
+
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(50,75,50);
+}
+
+@media screen and (max-width: 321px) {
+    .panel{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .ptop{
+        padding: 5px 10px;
+        font-size: 12px;
+        height: 80px;
+    }
+    .elem{
+        display: flex;
+        gap: 8px;
+    }
+    .box{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .pbottom{
+        padding: 5px 2px;
+        gap: 5px;
+    }
+    .bubble{
+        width: 25px;
+        height: 25px;
+    }
+}
