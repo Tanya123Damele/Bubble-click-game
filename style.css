@@ -84,7 +84,7 @@ html,body{
     background-color: rgb(50,75,50);
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 400px) {
     .panel{
         width: 100%;
         height: 100%;
